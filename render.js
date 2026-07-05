@@ -162,15 +162,20 @@ function renderComparisons(comparisons) {
 
 // ---------- Workflow Diagrams ----------
 function renderWorkflow(workflow) {
-  const steps = workflow.steps
-    .map(
-      (step, i) => `
+  const diagram = workflow.image
+    ? `<figure class="workflow-figure">
+        <img class="workflow-image" src="${workflow.image}" alt="${workflow.imageAlt || workflow.title}" loading="lazy" />
+      </figure>`
+
+    : `<ol class="workflow-diagram">${workflow.steps
+        .map(
+          (step, i) => `
       <li class="workflow-step">
         <span class="step-number">${i + 1}</span>
         <span class="step-label">${step}</span>
       </li>`
-    )
-    .join('<li class="workflow-arrow" aria-hidden="true">↓</li>');
+        )
+        .join('<li class="workflow-arrow" aria-hidden="true">↓</li>')}</ol>`;
 
   return `
     <div class="workflow-block" id="${workflow.id}">
@@ -181,7 +186,7 @@ function renderWorkflow(workflow) {
         </div>
         <span class="tag">Contributor: ${workflow.contributor}</span>
       </div>
-      <ol class="workflow-diagram">${steps}</ol>
+      ${diagram}
     </div>
   `;
 }
