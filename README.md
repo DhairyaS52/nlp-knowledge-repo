@@ -11,7 +11,7 @@ This repository presents key NLP concepts in a structured, interactive, and easy
 > Add your GitHub Pages link here
 
 Example:
-https://yourusername.github.io/nlp-knowledge-repository/
+https://dhairyas52.github.io/nlp-knowledge-repo/
 
 ---
 
