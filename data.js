@@ -293,47 +293,22 @@ const WORKFLOWS = [
     id: "preprocessing-pipeline",
     title: "Complete Text Preprocessing Pipeline",
     contributor: "Dhairya Shah",
-    steps: [
-      "Raw Text",
-      "Sentence Segmentation",
-      "Tokenization",
-      "Case Normalization",
-      "Noise Removal",
-      "Stop-word Removal",
-      "Stemming / Lemmatization",
-      "Clean Text",
-    ],
+    image: "images/Text Preprocessing Pipeline.png",
+    imageAlt: "Complete Text Preprocessing Pipeline diagram",
   },
   {
     id: "feature-engineering-pipeline",
     title: "Feature Engineering Pipeline",
     contributor: "Ankush Sharma",
-    steps: [
-      "Clean Text",
-      "Vocabulary Building",
-      "Bag of Words",
-      "N-Grams",
-      "Term Frequency (TF)",
-      "Inverse Document Frequency (IDF)",
-      "TF-IDF",
-      "Feature Vector",
-    ],
+    image: "images/Feature Engineering Pipeline.png",
+    imageAlt: "Feature Engineering Pipeline diagram",
   },
   {
     id: "text-to-vector-pipeline",
     title: "Text-to-Vector Transformation Process",
     contributor: "Ankush Sharma",
-    steps: [
-      "Sentence",
-      "Tokenization",
-      "Representation Choice",
-      "One-Hot Encoding",
-      "Word2Vec",
-      "FastText",
-      "Dense Embeddings",
-      "Vector Input to NLP Model",
-      "Prediction",
-    ],
+    image: "images/Text-to-Vector Transformation Process.png",
+    imageAlt: "Text-to-Vector Transformation Process diagram",
   },
 ];
 
@@ -507,5 +482,4 @@ const REFERENCES = [
   "Bird, S., Klein, E., & Loper, E. (2009). Natural language processing with Python. O'Reilly Media.",
 ];
 
-// ---------- AI DECLARATION ----------
-const AI_DECLARATION_TEXT = `Artificial Intelligence tools were used in the preparation of this repository to assist with drafting explanations, organizing content into a consistent structure across concept cards and comparison tables, and structuring the overall website layout. All technical content was reviewed by the student group for accuracy before inclusion. The core conceptual understanding, contribution planning, and final review of the repository were carried out by the students named in the Contribution Matrix. This declaration is provided in line with the academic integrity guidelines of the assignment.`;
+
