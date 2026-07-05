@@ -601,7 +601,28 @@ tbody tr:hover { background: color-mix(in srgb, var(--color-primary) 5%, var(--c
   box-shadow: var(--shadow-card);
 }
 
+.workflow-figure {
+  margin: 1.25rem auto 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.workflow-image {
+  display: block;
+  width: auto;
+  max-width: min(680px, 90%);
+  max-height: 360px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+}
+
 .workflow-diagram {
+
   list-style: none;
   padding: 0;
   margin: 1.25rem 0 0;
@@ -806,6 +827,9 @@ tbody tr:hover { background: color-mix(in srgb, var(--color-primary) 5%, var(--c
   .footer-bottom .back-to-top-link { display: none !important; }
 
   body { background: white; color: black; font-size: 11pt; }
+
+
+
   .section { padding: 1rem 0; break-inside: avoid; }
   .section:nth-of-type(even) { background: none; }
   .hero-section { background: none; padding: 1rem 0; }
