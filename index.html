@@ -1,6 +1,13 @@
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NLP Knowledge Artifact Repository</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
   <script>
     (function () {
       var saved = localStorage.getItem("nlp-theme");
@@ -13,21 +20,25 @@
 
   <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
 
-<!-- ============ NAVIGATION ============ -->
-<nav class="navbar" id="navbar">
-<a href="#home" class="nav-brand">
-<span class="nav-brand-mark">NLP</span> Repository
-</a>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
-      <span></span><span></span><span></span>
-    </button>
-<ul class="nav-links" id="nav-links">
-<li><a href="#home">Home</a></li>
-<li><a href="#introduction">Introduction</a></li>
-@@ -39,25 +33,6 @@
-<li><a href="#references">References</a></li>
-<li><a href="#ai-declaration">AI Declaration</a></li>
-</ul>
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-brand">
+      <span class="nav-brand-mark">NLP</span> Repository
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#concept-cards">Concept Cards</a></li>
+      <li><a href="#comparative-analysis">Comparative Analysis</a></li>
+      <li><a href="#workflow-diagrams">Workflow Diagrams</a></li>
+      <li><a href="#applications">Applications</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#sustainability">Sustainability</a></li>
+      <li><a href="#reflections">Reflections</a></li>
+      <li><a href="#contribution-matrix">Contribution Matrix</a></li>
+      <li><a href="#references">References</a></li>
+      <li><a href="#ai-declaration">AI Declaration</a></li>
+    </ul>
     <div class="nav-actions">
       <button type="button" class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
         <svg class="icon theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
@@ -47,13 +58,73 @@
         <span></span><span></span><span></span>
       </button>
     </div>
-</nav>
+  </nav>
 
-<main>
-@@ -125,15 +100,6 @@ <h2>Concept Cards</h2>
-Six foundational NLP concepts, each explained through Definition, Purpose, Working Principle,
-Example, Advantages, Limitations, Applications, and a Key Takeaway.
-</p>
+  <main>
+
+    <!-- ============ HERO / HOME ============ -->
+    <section id="home" class="section hero-section">
+      <div class="hero-inner">
+        <span class="eyebrow">Knowledge Artifact Repository</span>
+        <h1>Natural Language Processing<br />Knowledge Artifact Repository</h1>
+        <p class="subtitle">CCE Component 1 &mdash; Natural Language Processing</p>
+        <p class="student-placeholder">
+          Prepared by: [Dhairya Shah] &amp; [Ankush Sharma] &mdash; TY B.Tech, Semester V
+        </p>
+        <div class="hero-buttons">
+          <a href="#introduction" class="btn btn-primary">Explore Repository</a>
+          <a href="#concept-cards" class="btn btn-secondary">Concept Cards</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INTRODUCTION ============ -->
+    <section id="introduction" class="section">
+      <span class="eyebrow">Getting Started</span>
+      <h2>Introduction</h2>
+
+      <h3>What is NLP?</h3>
+      <p>
+        Natural Language Processing (NLP) is a branch of Artificial Intelligence that gives computers
+        the ability to read, interpret, and generate human language. It combines computational
+        linguistics with statistical and machine learning methods to bridge the gap between the way
+        humans communicate and the way computers process information.
+      </p>
+
+      <h3>Importance</h3>
+      <p>
+        Human language is unstructured, ambiguous, and context-dependent, which makes it fundamentally
+        different from the structured, numeric data that computers process natively. NLP techniques
+        convert this unstructured language into a form that machine learning models can use, powering
+        applications such as search engines, virtual assistants, translation systems, and sentiment
+        analysis tools that people rely on every day.
+      </p>
+
+      <h3>Objectives of This Repository</h3>
+      <ul>
+        <li>Systematically capture and organize the foundational concepts covered in Week 1 of the NLP curriculum</li>
+        <li>Explain each concept in terms a beginner can follow: what it is, why it is needed, and how it works</li>
+        <li>Compare related techniques directly so their trade-offs are clear</li>
+        <li>Connect these techniques to real workflows, applications, and current research</li>
+      </ul>
+
+      <h3>Learning Outcomes</h3>
+      <p>
+        After going through this repository, a reader should be able to explain the core text
+        preprocessing and feature engineering techniques used in NLP, understand why each step exists
+        in a typical NLP pipeline, compare competing techniques on accuracy and computational cost, and
+        identify where these techniques are applied in real-world systems.
+      </p>
+    </section>
+
+    <!-- ============ CONCEPT CARDS ============ -->
+    <section id="concept-cards" class="section">
+      <span class="eyebrow">Section A</span>
+      <h2>Concept Cards</h2>
+      <p class="section-intro">
+        Six foundational NLP concepts, each explained through Definition, Purpose, Working Principle,
+        Example, Advantages, Limitations, Applications, and a Key Takeaway.
+      </p>
       <div class="concept-search-bar">
         <label class="sr-only" for="concept-search">Search concept cards</label>
         <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
@@ -63,12 +134,114 @@ Example, Advantages, Limitations, Applications, and a Key Takeaway.
         <button type="button" class="search-clear" id="concept-search-clear" aria-label="Clear search" hidden>&times;</button>
       </div>
       <p class="search-status" id="concept-search-status" aria-live="polite"></p>
-<div id="concept-cards-container" class="card-grid"></div>
-</section>
+      <div id="concept-cards-container" class="card-grid"></div>
+    </section>
 
-@@ -243,12 +209,6 @@ <h4>Repository</h4>
-</div>
-</footer>
+    <!-- ============ COMPARATIVE ANALYSIS ============ -->
+    <section id="comparative-analysis" class="section">
+      <span class="eyebrow">Section B</span>
+      <h2>Comparative Analysis</h2>
+      <p class="section-intro">
+        Direct comparisons between related techniques, covering working mechanism, computational
+        complexity, strengths, weaknesses, and suitable applications.
+      </p>
+      <div id="comparisons-container"></div>
+    </section>
+
+    <!-- ============ WORKFLOW DIAGRAMS ============ -->
+    <section id="workflow-diagrams" class="section">
+      <span class="eyebrow">Section C</span>
+      <h2>Workflow Diagrams</h2>
+      <p class="section-intro">
+        Step-by-step pipelines showing how raw text moves through preprocessing, feature engineering,
+        and vector representation.
+      </p>
+      <div id="workflows-container"></div>
+    </section>
+
+    <!-- ============ APPLICATIONS ============ -->
+    <section id="applications" class="section">
+      <span class="eyebrow">Section D</span>
+      <h2>Real-World Applications</h2>
+      <p class="section-intro">
+        Five applications where the concepts above are used in production systems today.
+      </p>
+      <div id="applications-container" class="card-grid"></div>
+    </section>
+
+    <!-- ============ RESEARCH ============ -->
+    <section id="research" class="section">
+      <span class="eyebrow">Section E</span>
+      <h2>Research and Industry Insights</h2>
+      <div id="research-container" class="card-grid"></div>
+    </section>
+
+    <!-- ============ SUSTAINABILITY ============ -->
+    <section id="sustainability" class="section">
+      <span class="eyebrow">Impact</span>
+      <h2>Sustainability and Societal Impact</h2>
+      <h3>How NLP Can Contribute to Society and Sustainable Development</h3>
+      <div id="sustainability-container"></div>
+    </section>
+
+    <!-- ============ REFLECTIONS ============ -->
+    <section id="reflections" class="section">
+      <span class="eyebrow">Learning</span>
+      <h2>Reflection Notes</h2>
+      <div id="reflections-container" class="card-grid"></div>
+    </section>
+
+    <!-- ============ CONTRIBUTION MATRIX ============ -->
+    <section id="contribution-matrix" class="section">
+      <span class="eyebrow">Teamwork</span>
+      <h2>Contribution Matrix</h2>
+      <div id="contribution-matrix-container"></div>
+    </section>
+
+    <!-- ============ REFERENCES ============ -->
+    <section id="references" class="section">
+      <span class="eyebrow">Citations</span>
+      <h2>References</h2>
+      <div id="references-container"></div>
+    </section>
+
+    <!-- ============ AI DECLARATION ============ -->
+    <section id="ai-declaration" class="section">
+      <span class="eyebrow">Integrity</span>
+      <h2>AI Declaration</h2>
+      <div id="ai-declaration-container"></div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-brand-mark">NLP</span>
+        <p>Knowledge Artifact Repository<br />CCE Component 1</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Content</h4>
+          <a href="#concept-cards">Concept Cards</a>
+          <a href="#comparative-analysis">Comparative Analysis</a>
+          <a href="#workflow-diagrams">Workflow Diagrams</a>
+          <a href="#applications">Applications</a>
+        </div>
+        <div>
+          <h4>Repository</h4>
+          <a href="#research">Research</a>
+          <a href="#sustainability">Sustainability</a>
+          <a href="#contribution-matrix">Contribution Matrix</a>
+          <a href="#references">References</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> NLP Knowledge Artifact Repository &mdash; CCE Component 1</p>
+      <a href="#home" class="back-to-top-link">Back to top ↑</a>
+    </div>
+  </footer>
 
   <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">
     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -76,6 +249,9 @@ Example, Advantages, Limitations, Applications, and a Key Takeaway.
     </svg>
   </button>
 
-<script src="data.js"></script>
-<script src="render.js"></script>
-<script src="main.js"></script>
+  <script src="data.js"></script>
+  <script src="render.js"></script>
+  <script src="main.js"></script>
+  <script src="ui.js"></script>
+</body>
+</html>
