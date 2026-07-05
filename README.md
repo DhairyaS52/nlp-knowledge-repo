@@ -8,7 +8,6 @@ This repository presents key NLP concepts in a structured, interactive, and easy
 
 ## 🌐 Live Demo
 
-> Add your GitHub Pages link here
 
 Example:
 https://dhairyas52.github.io/nlp-knowledge-repo/
