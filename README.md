@@ -133,12 +133,6 @@ Or simply visit the GitHub Pages link.
 
 ---
 
-## 🤖 AI Usage Declaration
-
-AI tools were used to assist in brainstorming, organizing content, improving explanations, and designing the website. All content was reviewed, verified, and edited by the contributors before submission.
-
----
-
 ## 📄 License
 
 This project was developed for academic purposes as part of the CCE Component-I assignment for the Natural Language Processing course.
