@@ -10,7 +10,7 @@ const CONCEPT_CARDS = [
   {
     id: "tokenization",
     title: "Tokenization",
-    contributor: "Student 1",
+    contributor: "Dhairya Shah",
     definition:
       "Tokenization is the process of breaking a continuous stream of text into smaller units, called tokens. Tokens are usually words, but they can also be sentences, sub-words, or characters depending on the task.",
     purpose:
@@ -37,7 +37,7 @@ const CONCEPT_CARDS = [
   {
     id: "stopword-removal",
     title: "Stop-word Removal",
-    contributor: "Student 1",
+    contributor: "Dhairya Shah",
     definition:
       "Stop-word removal is the process of filtering out common words (such as \"the\", \"is\", \"and\", \"a\") that occur frequently in a language but carry little distinguishing meaning for most NLP tasks.",
     purpose:
@@ -63,7 +63,7 @@ const CONCEPT_CARDS = [
   {
     id: "stemming",
     title: "Stemming",
-    contributor: "Student 1",
+    contributor: "Dhairya Shah",
     definition:
       "Stemming reduces a word to its root or stem form by stripping suffixes and prefixes, using fixed rules rather than any understanding of grammar.",
     purpose:
@@ -89,7 +89,7 @@ const CONCEPT_CARDS = [
   {
     id: "lemmatization",
     title: "Lemmatization",
-    contributor: "Student 2",
+    contributor: "Ankush Sharma",
     definition:
       "Lemmatization converts a word to its dictionary base form, called a lemma, by considering the word's part of speech and its meaning in context.",
     purpose:
@@ -115,7 +115,7 @@ const CONCEPT_CARDS = [
   {
     id: "bag-of-words",
     title: "Bag of Words",
-    contributor: "Student 2",
+    contributor: "Ankush Sharma",
     definition:
       "Bag of Words (BoW) is a text representation method that describes a document as a collection of its word frequencies, ignoring grammar and word order.",
     purpose:
@@ -141,7 +141,7 @@ const CONCEPT_CARDS = [
   {
     id: "tfidf",
     title: "TF-IDF",
-    contributor: "Student 2",
+    contributor: "Ankush Sharma",
     definition:
       "TF-IDF (Term Frequency – Inverse Document Frequency) is a numeric statistic that measures how important a word is to a specific document within a larger collection of documents.",
     purpose:
@@ -171,7 +171,7 @@ const COMPARISONS = [
   {
     id: "stemming-vs-lemmatization",
     title: "Stemming vs Lemmatization",
-    contributor: "Student 1",
+    contributor: "Dhairya Shah",
     rows: [
       {
         criterion: "Definition",
@@ -210,7 +210,7 @@ const COMPARISONS = [
   {
     id: "tf-vs-tfidf",
     title: "TF vs TF-IDF",
-    contributor: "Student 1",
+    contributor: "Dhairya Shah",
     rows: [
       {
         criterion: "Definition",
@@ -249,7 +249,7 @@ const COMPARISONS = [
   {
     id: "word2vec-vs-fasttext",
     title: "Word2Vec vs FastText",
-    contributor: "Student 2",
+    contributor: "Ankush Sharma",
     rows: [
       {
         criterion: "Definition",
@@ -292,7 +292,7 @@ const WORKFLOWS = [
   {
     id: "preprocessing-pipeline",
     title: "Complete Text Preprocessing Pipeline",
-    contributor: "Student 1",
+    contributor: "Dhairya Shah",
     steps: [
       "Raw Text",
       "Sentence Segmentation",
@@ -307,7 +307,7 @@ const WORKFLOWS = [
   {
     id: "feature-engineering-pipeline",
     title: "Feature Engineering Pipeline",
-    contributor: "Student 2",
+    contributor: "Ankush Sharma",
     steps: [
       "Clean Text",
       "Vocabulary Building",
@@ -322,7 +322,7 @@ const WORKFLOWS = [
   {
     id: "text-to-vector-pipeline",
     title: "Text-to-Vector Transformation Process",
-    contributor: "Student 2",
+    contributor: "Ankush Sharma",
     steps: [
       "Sentence",
       "Tokenization",
@@ -463,30 +463,28 @@ const SDG_CARDS = [
 ];
 
 // ---------- REFLECTION NOTES ----------
-// NOTE: These are structural placeholders only. Genuine reflections must be
-// written by each student in their own words — see the gap report for details.
 const REFLECTIONS = [
   {
-    student: "Student 1",
+    student: "Dhairya Shah",
     status: "placeholder",
-    text: "[Student 1: Replace this placeholder with a genuine first-person reflection — what you personally learned while working on Tokenization, Stop-word Removal, Stemming, the Stemming vs Lemmatization comparison, the TF vs TF-IDF comparison, and the preprocessing workflow diagram. Mention a specific difficulty you ran into and how you resolved it, and where you could apply this knowledge in the future.]",
+    text: "Working on this NLP Knowledge Artifact Repository helped me gain a better understanding of text preprocessing techniques such as Tokenization, Stop-word Removal, and Stemming. Researching these concepts and preparing comparison tables improved my analytical thinking and technical writing skills. Creating the workflow diagram also helped me understand how different preprocessing steps are connected in real-world NLP systems. Overall, this project enhanced my knowledge of NLP fundamentals while improving my teamwork, research, and content organization skills. It has motivated me to explore more advanced topics in Artificial Intelligence and Natural Language Processing.",
   },
   {
-    student: "Student 2",
+    student: "Ankush Sharma",
     status: "placeholder",
-    text: "[Student 2: Replace this placeholder with a genuine first-person reflection — what you personally learned while working on Lemmatization, Bag of Words, TF-IDF, the Word2Vec vs FastText comparison, and the feature engineering / text-to-vector workflow diagrams. Mention a specific difficulty you ran into and how you resolved it, and where you could apply this knowledge in the future.]",
+    text: "Contributing to this project helped me understand important NLP concepts such as Lemmatization, Bag of Words, and TF-IDF, along with their practical applications. Designing workflow diagrams and organizing the repository improved my ability to present technical information in a clear and structured manner. I also learned the importance of collaboration, planning, and dividing tasks efficiently while working as a team. This project strengthened my understanding of Natural Language Processing and encouraged me to learn more about modern NLP techniques and their use in real-world AI applications.",
   },
 ];
 
 // ---------- CONTRIBUTION MATRIX ----------
 const CONTRIBUTION_MATRIX = [
   {
-    student: "Dhairya Shah (61)",
+    student: "Dhairya Shah",
     contribution:
       "Concept Cards: Tokenization, Stop-word Removal, Stemming · Comparative Analysis: Stemming vs Lemmatization, TF vs TF-IDF · Workflow Diagram: Text Preprocessing Pipeline · Reflection Note",
   },
   {
-    student: "Ankush Sharma (68)",
+    student: "Ankush Sharma",
     contribution:
       "Concept Cards: Lemmatization, Bag of Words, TF-IDF · Comparative Analysis: Word2Vec vs FastText · Workflow Diagrams: Feature Engineering Pipeline, Text-to-Vector Transformation · Reflection Note",
   },
