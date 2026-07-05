@@ -8,23 +8,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <script>
-    (function () {
-      var saved = localStorage.getItem("nlp-theme");
-      var dark = saved === "dark" || (!saved && window.matchMedia("(prefers-color-scheme: dark)").matches);
-      if (dark) document.documentElement.setAttribute("data-theme", "dark");
-    })();
-  </script>
 </head>
 <body>
-
-  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
 
   <!-- ============ NAVIGATION ============ -->
   <nav class="navbar" id="navbar">
     <a href="#home" class="nav-brand">
       <span class="nav-brand-mark">NLP</span> Repository
     </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
     <ul class="nav-links" id="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#introduction">Introduction</a></li>
@@ -39,25 +33,6 @@
       <li><a href="#references">References</a></li>
       <li><a href="#ai-declaration">AI Declaration</a></li>
     </ul>
-    <div class="nav-actions">
-      <button type="button" class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
-        <svg class="icon theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-          <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
-        </svg>
-        <svg class="icon theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-          <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a6.5 6.5 0 0 0 11.5 11.5Z"/>
-        </svg>
-      </button>
-      <button type="button" class="icon-btn" id="print-btn" aria-label="Print to PDF" title="Print / Save as PDF">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-          <path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
-          <rect x="6" y="14" width="12" height="8" rx="1"/>
-        </svg>
-      </button>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
   </nav>
 
   <main>
@@ -125,15 +100,6 @@
         Six foundational NLP concepts, each explained through Definition, Purpose, Working Principle,
         Example, Advantages, Limitations, Applications, and a Key Takeaway.
       </p>
-      <div class="concept-search-bar">
-        <label class="sr-only" for="concept-search">Search concept cards</label>
-        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-          <circle cx="10" cy="10" r="6"/><path d="M20 20l-5.5-5.5"/>
-        </svg>
-        <input type="search" id="concept-search" placeholder="Search concepts (e.g. tokenization, TF-IDF)…" autocomplete="off" />
-        <button type="button" class="search-clear" id="concept-search-clear" aria-label="Clear search" hidden>&times;</button>
-      </div>
-      <p class="search-status" id="concept-search-status" aria-live="polite"></p>
       <div id="concept-cards-container" class="card-grid"></div>
     </section>
 
@@ -242,12 +208,6 @@
       <a href="#home" class="back-to-top-link">Back to top ↑</a>
     </div>
   </footer>
-
-  <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">
-    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-      <path d="M12 19V5M5 12l7-7 7 7"/>
-    </svg>
-  </button>
 
   <script src="data.js"></script>
   <script src="render.js"></script>
