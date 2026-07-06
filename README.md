@@ -70,6 +70,10 @@ The website is designed to help students understand NLP concepts through:
 
 ```
 /
+├──images
+├  ├── Feature Engineering Pipeline.png
+├  ├── Text Preprocessing Pipeline.png
+├  └── Text-to-Vector Transformation Process.png
 ├── index.html
 ├── css/
 ├── js/
