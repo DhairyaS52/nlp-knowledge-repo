@@ -456,27 +456,23 @@ const CONTRIBUTION_MATRIX = [
   {
     student: "Dhairya Shah",
     contribution:
-      "Concept Cards: Tokenization, Stop-word Removal, Stemming · Comparative Analysis: Stemming vs Lemmatization, TF vs TF-IDF · Workflow Diagram: Text Preprocessing Pipeline · Reflection Note",
+      "Concept Cards: Tokenization, Stop-word Removal, Stemming · Comparative Analysis: Stemming vs Lemmatization,  Word2Vec vs FastText · Workflow Diagram: Text Preprocessing Pipeline · Reflection Note",
   },
   {
     student: "Ankush Sharma",
     contribution:
-      "Concept Cards: Lemmatization, Bag of Words, TF-IDF · Comparative Analysis: Word2Vec vs FastText · Workflow Diagrams: Feature Engineering Pipeline, Text-to-Vector Transformation · Reflection Note",
+      "Concept Cards: Lemmatization, Bag of Words, TF-IDF · Comparative Analysis: TF vs TF-IDF · Workflow Diagrams: Feature Engineering Pipeline, Text-to-Vector Transformation · Reflection Note",
   },
   {
     student: "Joint",
     contribution:
-      "Applications, Sustainability & Societal Impact, Research & Industry Insights, References, AI Declaration",
+      "Applications, Sustainability & Societal Impact, Research & Industry Insights, References",
   },
 ];
 
 // ---------- REFERENCES (APA) ----------
 const REFERENCES = [
   "Jurafsky, D., & Martin, J. H. (2023). Speech and language processing (3rd ed. draft). Stanford University.",
-  "Manning, C. D., Raghavan, P., & Schütze, H. (2008). Introduction to information retrieval. Cambridge University Press.",
-  "Mikolov, T., Chen, K., Corrado, G., & Dean, J. (2013). Efficient estimation of word representations in vector space. arXiv preprint arXiv:1301.3781.",
-  "Bojanowski, P., Grave, E., Joulin, A., & Mikolov, T. (2017). Enriching word vectors with subword information. Transactions of the Association for Computational Linguistics, 5, 135–146.",
-  "Salton, G., & Buckley, C. (1988). Term-weighting approaches in automatic text retrieval. Information Processing & Management, 24(5), 513–523.",
   "Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2019). BERT: Pre-training of deep bidirectional transformers for language understanding. Proceedings of NAACL-HLT 2019.",
   "Hugging Face. (2026). Transformers documentation. https://huggingface.co/docs/transformers",
   "Bird, S., Klein, E., & Loper, E. (2009). Natural language processing with Python. O'Reilly Media.",
