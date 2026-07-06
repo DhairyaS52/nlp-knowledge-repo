@@ -281,7 +281,7 @@ li { margin-bottom: 0.3rem; }
   display: block;
   height: 2px;
   width: 100%;
-  background: var(--color-secondary);
+  background: var(--color-text-muted);
   border-radius: 2px;
   transition: transform var(--transition-fast), opacity var(--transition-fast);
 }
@@ -611,8 +611,8 @@ tbody tr:hover { background: color-mix(in srgb, var(--color-primary) 5%, var(--c
 .workflow-image {
   display: block;
   width: auto;
-  max-width: min(680px, 90%);
-  max-height: 360px;
+  max-width: min(920px, 96%);
+  max-height: 520px;
   height: auto;
   object-fit: contain;
   margin: 0 auto;
@@ -620,6 +620,7 @@ tbody tr:hover { background: color-mix(in srgb, var(--color-primary) 5%, var(--c
   border: 1px solid var(--color-border);
   background: var(--color-bg);
 }
+
 
 .workflow-diagram {
 
@@ -845,29 +846,41 @@ tbody tr:hover { background: color-mix(in srgb, var(--color-primary) 5%, var(--c
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
   .nav-toggle { display: flex; }
-
   .nav-links {
+    /* keep layout consistent but collapse visually for transition */
     position: fixed;
     top: var(--nav-height);
     left: 0;
     right: 0;
-    bottom: 0;
     background: var(--color-card);
     border-bottom: 1px solid var(--color-border);
     flex-direction: column;
     gap: 0;
     padding: 0.5rem 0 2rem;
-    display: none;
+    display: flex;
     overflow-y: auto;
-    z-index: 99;
+    z-index: 150;
     justify-content: flex-start;
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-6px);
+    transition: max-height 280ms var(--transition-smooth), opacity 200ms var(--transition-fast), transform 200ms var(--transition-fast);
   }
 
-  .nav-links.open { display: flex; }
+.nav-links.open {
+  max-height: calc(100vh - var(--nav-height));
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
   .nav-links li { width: 100%; }
-  .nav-links a { display: block; padding: 0.85rem 1.75rem; }
+  .nav-links li a { width: 100%; }
+
+  .nav-links a { display: block; padding: 0.85rem 1.75rem; color: var(--color-secondary); }
   .nav-links a.active::after { display: none; }
   .nav-links a.active { background: var(--color-primary-tint); }
+
 
   .section { padding: 3rem 1.25rem; }
   .hero-section { padding: 3.5rem 1.25rem 3rem; }
