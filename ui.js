@@ -40,12 +40,14 @@ function initMobileNav() {
   const closeNav = () => {
     links.classList.remove("open");
     toggle.setAttribute("aria-expanded", "false");
+    links.setAttribute("aria-hidden", "true");
     document.body.classList.remove("nav-open");
   };
 
   toggle.addEventListener("click", () => {
     const isOpen = links.classList.toggle("open");
     toggle.setAttribute("aria-expanded", String(isOpen));
+    links.setAttribute("aria-hidden", String(!isOpen));
     document.body.classList.toggle("nav-open", isOpen);
   });
 
@@ -55,10 +57,16 @@ function initMobileNav() {
     if (!navbar.contains(e.target) && links.classList.contains("open")) closeNav();
   });
 
+  // Close mobile nav with Escape for better accessibility
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && links.classList.contains("open")) closeNav();
+  });
+
   window.addEventListener("resize", () => {
     if (window.innerWidth > 860) closeNav();
   });
 }
+
 
 function initSmoothScroll() {
   const navHeight = () => document.getElementById("navbar").offsetHeight + 8;
@@ -78,7 +86,18 @@ function initSmoothScroll() {
   });
 }
 
+
+
+
+
+
+
+
+
+
+
 function initScrollProgress() {
+
   const bar = document.getElementById("scroll-progress");
   let ticking = false;
 
